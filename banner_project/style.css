@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.banner {
+    width: 1200px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border-radius: 20px;
+    padding: 40px 60px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-buttons .login-btn {
+    margin-right: 10px;
+}
+
+.nav-buttons .signup-btn {
+    background-color: #fff;
+    color: #6e8efb;
+}
+
+.main-content {
+    text-align: center;
+}
+
+.main-content h1 {
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.main-content h2 {
+    font-size: 60px;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    opacity: 0.9;
+}
+
+.main-content p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.action-buttons a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 18px 35px;
+    border-radius: 50px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.primary-btn {
+    background-color: #fff;
+    color: #6e8efb;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.secondary-btn {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+
+.secondary-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}

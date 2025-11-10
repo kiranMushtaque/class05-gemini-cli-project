@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canva | A new era</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, #a855f7 0%, #3b82f6 50%, #10b8b4 100%);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      width: 100%;
+      max-width: 1200px;
+      text-align: center;
+      padding: 40px 20px 120px;
+      position: relative;
+    }
+
+    /* curved bottom section */
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: -100px;
+      left: 0;
+      width: 100%;
+      height: 250px;
+      background: linear-gradient(180deg, #3b82f6 0%, #10b8b4 100%);
+      border-top-left-radius: 50% 100%;
+      border-top-right-radius: 50% 100%;
+      z-index: -1;
+    }
+
+    /* nav */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .nav-buttons a {
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .signup-btn {
+      background-color: rgba(255, 255, 255, 0.25);
+      color: #fff;
+    }
+
+    .signup-btn:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .login-btn {
+      background-color: #fff;
+      color: #3b82f6;
+    }
+
+    /* content */
+    h1 {
+      font-size: 90px;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 90px;
+      font-weight: 400;
+      margin-top: -10px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 18px;
+      max-width: 640px;
+      margin: 0 auto 50px;
+      opacity: 0.9;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      padding: 16px 36px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .primary-btn {
+      background-color: #fff;
+      color: #1e3a8a;
+    }
+
+    .primary-btn:hover {
+      background-color: #f3f4f6;
+    }
+
+    .secondary-btn {
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      background-color: transparent;
+      color: #fff;
+    }
+
+    .secondary-btn:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    @media (max-width: 768px) {
+      h1, h2 {
+        font-size: 52px;
+      }
+      header {
+        padding: 20px;
+      }
+      nav {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Canva</div>
+      <div class="nav-links">
+        <a href="#">Design</a>
+        <a href="#">Product</a>
+        <a href="#">Plans</a>
+        <a href="#">Business</a>
+        <a href="#">Education</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="nav-buttons">
+        <a href="#" class="signup-btn">Sign up</a>
+        <a href="#" class="login-btn">Log in</a>
+      </div>
+    </nav>
+
+    <div class="content">
+      <h1>A new era</h1>
+      <h2>of imagination</h2>
+      <p>Discover a whole new world of skills and tools designed to put your imagination to work.</p>
+      <div class="buttons">
+        <a href="#" class="primary-btn">Start designing for free</a>
+        <a href="#" class="secondary-btn">Explore our launches</a>
+      </div>
+    </div>
+  </header>
+</body>
+</html>
